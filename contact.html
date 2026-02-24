@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Guru Software Solutions</title>
+    <link rel="icon" href="newlogo.jpeg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="assets/images/logo.svg" alt="Guru Software Solutions" class="logo-img">
+                <span>Guru Software</span>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="portfolio.html" class="nav-link">Portfolio</a>
+                <a href="team.html" class="nav-link">Team</a>
+                <a href="careers.html" class="nav-link">Careers</a>
+                <a href="contact.html" class="nav-link active cta-btn">Contact Us</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="page contact-page">
+        <div class="page-header">
+            <h1>Contact Us</h1>
+            <p style="color: beige;">Get in touch with our team</p>
+        </div>
+
+        <div class="contact-container">
+            <div class="contact-form-section">
+                <h2>Send us a Message</h2>
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="contactName">Your Name *</label>
+                        <input type="text" id="contactName" class="form-input" placeholder="Your full name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactEmail">Email Address *</label>
+                        <input type="email" id="contactEmail" class="form-input" placeholder="your.email@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactPhone">Phone Number</label>
+                        <input type="tel" id="contactPhone" class="form-input" placeholder="+91 XXXXX XXXXX">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactSubject">Subject *</label>
+                        <input type="text" id="contactSubject" class="form-input" placeholder="What is this about?" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactMessage">Message *</label>
+                        <textarea id="contactMessage" class="form-textarea" placeholder="Your message here..." rows="6" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" onclick="submitContactForm(event)">Send Message</button>
+                </form>
+            </div>
+
+            <div class="contact-info-section">
+                <h2>Contact Information</h2>
+                <div class="contact-info-card">
+                    <h3>📍 Our Location</h3>
+                       <p>Erode District<br> Tamil Nadu 638 506<br>India</p>
+                </div>
+
+                <div class="contact-info-card">
+                    <h3>📧 Email</h3>
+                    <p>
+                        General: <a href="mailto:info@gurusoftware25@gmail.com">gurusoftware25@gmail.com</a><br>
+                    </p>
+                </div>
+
+                <div class="contact-info-card">
+                    <h3>📱 Phone</h3>
+                    <p>
+                        Main: <a href="tel:+918056714179">+91 80567 14179</a><br>
+                    </p>
+                </div>
+
+                <div class="contact-info-card">
+                    <h3>🕐 Working Hours</h3>
+                    <p>
+                        Monday - Friday: 10:00 AM - 4:00 PM IST<br>
+                        Saturday: 10:00 AM - 12:00 PM IST<br>
+                        Sunday: Closed
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Guru Software Solutions</h3>
+                    <p>Building smart software solutions for the digital future</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Web Development</a></li>
+                        <li><a href="services.html">Mobile Apps</a></li>
+                        <li><a href="services.html">UI/UX Design</a></li>
+                        <li><a href="services.html">AI & Automation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/guru-software-solutions-1605093a9" target="_blank"><img src="linkedlogo.jpg" alt="LinkedIn" width="30"></a></li>
+                        <li><a href="https://www.instagram.com/guru_software_25?igsh=MXFncHgwcmZwNTNsag==" target="_blank"><img src="instalogo.png" alt="Instagram" width="30"></a></li>
+                        <li><a href="https://www.facebook.com/share/1C5tktuWzf/" target="_blank"><img src="facebooklogo.png" alt="Facebook" width="30"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Guru Software Solutions. All rights reserved.</p>
+            </div>
+        </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

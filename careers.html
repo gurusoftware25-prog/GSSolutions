@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers - Guru Software Solutions</title>
+    <link rel="icon" href="newlogo.jpeg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="assets/images/logo.svg" alt="Guru Software Solutions" class="logo-img">
+                <span>Guru Software</span>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="portfolio.html" class="nav-link">Portfolio</a>
+                <a href="team.html" class="nav-link">Team</a>
+                <a href="careers.html" class="nav-link">Careers</a>
+                <a href="contact.html" class="nav-link cta-btn">Contact Us</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- ==================== CAREERS PAGE ==================== -->
+    <section id="careers" class="page careers-page">
+        <div class="page-header">
+            <h1>Join Our Team</h1>
+            <p style="color: aliceblue;">Build your career with Guru Software Solutions</p>
+        </div>
+
+        <!-- Job Openings -->
+        <div class="careers-container">
+            <div class="jobs-section">
+                <h2>Current Job Openings</h2>
+                <div class="jobs-list">
+                    <!-- Job 1: Frontend Developer -->
+                    <div class="job-card" onclick="expandJob(this, event)">
+                        <div class="job-header">
+                            <h3>Frontend Developer</h3>
+                            <span class="job-toggle">+</span>
+                        </div>
+                       
+                        <div class="job-details hidden">
+                            <h4>Role Description</h4>
+                            <p>We're looking for a talented Frontend Developer to join our growing team. You'll work on cutting-edge web applications using React, Vue, or Angular, creating beautiful and responsive user interfaces.</p>
+                            
+                            <h4>Key Responsibilities</h4>
+                            <ul>
+                                <li>Develop and maintain responsive web applications</li>
+                                <li>Collaborate with UI/UX designers and backend developers</li>
+                                <li>Optimize application performance</li>
+                                <li>Write clean, maintainable, and well-documented code</li>
+                            </ul>
+
+                            <h4>Required Skills</h4>
+                            <ul>
+                                <li>3+ years of experience in frontend development</li>
+                                <li>Proficiency in React, Vue, or Angular</li>
+                                <li>Strong HTML, CSS, and JavaScript skills</li>
+                                <li>Experience with REST APIs and Git</li>
+                                <li>Knowledge of responsive design and mobile-first approach</li>
+                            </ul>
+
+                            <h4>Nice to Have</h4>
+                            <ul>
+                                <li>TypeScript experience</li>
+                                <li>Testing frameworks (Jest, Cypress)</li>
+                                <li>DevTools and debugging skills</li>
+                            </ul>
+
+                            <button class="btn btn-primary apply-btn" onclick="showApplicationForm('Frontend Developer')">Apply Now</button>
+                        </div>
+                    </div>
+
+                    <!-- Job 2: Backend Developer (Python) -->
+                    <div class="job-card" onclick="expandJob(this, event)">
+                        <div class="job-header">
+                            <h3>Backend Developer (Python)</h3>
+                            <span class="job-toggle">+</span>
+                        </div>
+                       
+                        <div class="job-details hidden">
+                            <h4>Role Description</h4>
+                            <p>Join our backend team to build scalable server-side applications. We use Python, Django, and modern databases to power our products. You'll work on APIs, databases, and cloud infrastructure.</p>
+                            
+                            <h4>Key Responsibilities</h4>
+                            <ul>
+                                <li>Design and develop backend services and APIs</li>
+                                <li>Optimize database queries and improve system performance</li>
+                                <li>Implement security best practices</li>
+                                <li>Collaborate with frontend team on API specifications</li>
+                            </ul>
+
+                            <h4>Required Skills</h4>
+                            <ul>
+                                <li>3+ years of Python development experience</li>
+                                <li>Strong understanding of Django or Flask</li>
+                                <li>Database design and SQL knowledge (PostgreSQL/MySQL)</li>
+                                <li>RESTful API development</li>
+                                <li>Understanding of microservices architecture</li>
+                            </ul>
+
+                            <h4>Nice to Have</h4>
+                            <ul>
+                                <li>Docker and Kubernetes experience</li>
+                                <li>AWS or cloud platform expertise</li>
+                                <li>Message queues (Redis, RabbitMQ)</li>
+                            </ul>
+
+                            <button class="btn btn-primary apply-btn" onclick="showApplicationForm('Backend Developer (Python)')">Apply Now</button>
+                        </div>
+                    </div>
+
+                    <!-- Job 3: Full Stack Developer -->
+                    <div class="job-card" onclick="expandJob(this, event)">
+                        <div class="job-header">
+                            <h3>Full Stack Developer</h3>
+                            <span class="job-toggle">+</span>
+                        </div>
+                        
+                        <div class="job-details hidden">
+                            <h4>Role Description</h4>
+                            <p>We need a versatile Full Stack Developer who can work across our entire tech stack. From frontend to backend to deployment, you'll have the opportunity to impact all aspects of our applications.</p>
+                            
+                            <h4>Key Responsibilities</h4>
+                            <ul>
+                                <li>Develop full-stack features from concept to production</li>
+                                <li>Maintain code quality and best practices</li>
+                                <li>Participate in code reviews and technical discussions</li>
+                                <li>Contribute to system architecture and design decisions</li>
+                            </ul>
+
+                            <h4>Required Skills</h4>
+                            <ul>
+                                <li>3+ years of full-stack development experience</li>
+                                <li>Strong frontend skills (React, Vue, or Angular)</li>
+                                <li>Backend expertise (Python, Node.js, or similar)</li>
+                                <li>Database management (SQL and NoSQL)</li>
+                                <li>Version control and deployment knowledge</li>
+                            </ul>
+
+                            <h4>Nice to Have</h4>
+                            <ul>
+                                <li>Cloud platform experience (AWS, Azure)</li>
+                                <li>DevOps/CI-CD pipeline knowledge</li>
+                                <li>Agile development experience</li>
+                            </ul>
+
+                            <button class="btn btn-primary apply-btn" onclick="showApplicationForm('Full Stack Developer')">Apply Now</button>
+                        </div>
+                    </div>
+
+                    <!-- Job 4: UI/UX Designer -->
+                    <div class="job-card" onclick="expandJob(this, event)">
+                        <div class="job-header">
+                            <h3>UI/UX Designer</h3>
+                            <span class="job-toggle">+</span>
+                        </div>
+                       
+                        <div class="job-details hidden">
+                            <h4>Role Description</h4>
+                            <p>We're seeking a creative UI/UX Designer to craft intuitive and beautiful interfaces for our web and mobile applications. You'll work closely with our product and development teams.</p>
+                            
+                            <h4>Key Responsibilities</h4>
+                            <ul>
+                                <li>Conduct user research and create user personas</li>
+                                <li>Design wireframes, mockups, and prototypes</li>
+                                <li>Create and maintain design systems</li>
+                                <li>Collaborate with developers on implementation</li>
+                            </ul>
+
+                            <h4>Required Skills</h4>
+                            <ul>
+                                <li>3+ years of UI/UX design experience</li>
+                                <li>Proficiency in design tools (Figma, Adobe XD, Sketch)</li>
+                                <li>Strong understanding of design principles and typography</li>
+                                <li>Experience with user research methods</li>
+                                <li>Portfolio showcasing your work</li>
+                            </ul>
+
+                            <h4>Nice to Have</h4>
+                            <ul>
+                                <li>Interaction design and animation skills</li>
+                                <li>Prototyping experience</li>
+                                <li>Frontend development knowledge (HTML/CSS)</li>
+                            </ul>
+
+                            <button class="btn btn-primary apply-btn" onclick="showApplicationForm('UI/UX Designer')">Apply Now</button>
+                        </div>
+                    </div>
+
+                    <!-- Job 5: Intern / Fresher -->
+                    <div class="job-card" onclick="expandJob(this, event)">
+                        <div class="job-header">
+                            <h3>Intern / Fresher - Development</h3>
+                            <span class="job-toggle">+</span>
+                        </div>
+                       
+                        <div class="job-details hidden">
+                            <h4>Role Description</h4>
+                            <p>Great opportunity for recent graduates and beginners to start their tech career. You'll be mentored by experienced developers and work on real projects while learning industry best practices.</p>
+                            
+                            <h4>Key Responsibilities</h4>
+                            <ul>
+                                <li>Develop and test software features under supervision</li>
+                                <li>Participate in code reviews and team discussions</li>
+                                <li>Learn and apply best practices in coding and development</li>
+                                <li>Contribute to documentation and technical writing</li>
+                            </ul>
+
+                            <h4>Requirements</h4>
+                            <ul>
+                                <li>Recent graduate or final-year student</li>
+                                <li>Basic knowledge of programming (Python, Java, or JavaScript)</li>
+                                <li>Strong desire to learn and grow</li>
+                                <li>Good communication and teamwork skills</li>
+                                <li>Problem-solving mindset</li>
+                            </ul>
+
+                            <h4>What You'll Learn</h4>
+                            <ul>
+                                <li>Professional software development practices</li>
+                                <li>Working with real clients and projects</li>
+                                <li>Industry-standard tools and frameworks</li>
+                                <li>Agile development methodology</li>
+                            </ul>
+
+                            <button class="btn btn-primary apply-btn" onclick="showApplicationForm('Intern / Fresher')">Apply Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Application Form -->
+            <div id="applicationForm" class="application-form-section hidden">
+                <h2>Job Application Form</h2>
+                <form id="jobApplicationForm" class="application-form">
+                    <div class="form-group">
+                        <label for="selectedRole">Selected Role *</label>
+                        <input type="text" id="selectedRole" name="role" class="form-input" readonly>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="applicantName">Full Name *</label>
+                        <input type="text" id="applicantName" name="name" class="form-input" placeholder="Your full name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="applicantEmail">Email Address *</label>
+                        <input type="email" id="applicantEmail" name="email" class="form-input" placeholder="your.email@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="applicantPhone">Phone Number *</label>
+                        <input type="tel" id="applicantPhone" name="phone" class="form-input" placeholder="+91 XXXXX XXXXX" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="applicantExperience">Years of Experience *</label>
+                        <select id="applicantExperience" name="experience" class="form-input" required>
+                            <option value="">Select experience level</option>
+                            <option value="fresher">Fresher (0 years)</option>
+                            <option value="1-2">1-2 years</option>
+                            <option value="2-5">2-5 years</option>
+                            <option value="5-10">5-10 years</option>
+                            <option value="10+">10+ years</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="resumeFile">Upload Resume *</label>
+                        <input type="file" id="resumeFile" name="resume" class="form-input" accept=".pdf,.doc,.docx" required>
+                        <small>Supported formats: PDF, DOC, DOCX</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="applicantMessage">Cover Letter / Message</label>
+                        <textarea id="applicantMessage" name="message" class="form-textarea" placeholder="Tell us about yourself and why you're interested in this role" rows="5"></textarea>
+                    </div>
+
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="agreeTerms" required>
+                        <label for="agreeTerms">I agree to the terms and conditions</label>
+                    </div>
+
+                    <div class="form-buttons">
+                        <button type="submit" class="btn btn-primary" onclick="submitJobApplication(event)">Submit Application</button>
+                        <button type="button" class="btn btn-secondary" onclick="closeApplicationForm()">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Why Join Us -->
+        <div class="why-join-us">
+            <h2>Why Join Guru Software Solutions?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <h4>🎓 Growth Opportunities</h4>
+                    <p>Continuous learning and skill development programs</p>
+                </div>
+                <div class="benefit-item">
+                    <h4>💼 Professional Environment</h4>
+                    <p>Work with experienced mentors and talented colleagues</p>
+                </div>
+                <div class="benefit-item">
+                    <h4>🌍 Global Projects</h4>
+                    <p>Work on projects for clients around the world</p>
+                </div>
+                <div class="benefit-item">
+                    <h4>📈 Career Growth</h4>
+                    <p>Clear career progression and leadership opportunities</p>
+                </div>
+                <div class="benefit-item">
+                    <h4>💰 Competitive Compensation</h4>
+                    <p>Competitive salary and benefits package</p>
+                </div>
+                <div class="benefit-item">
+                    <h4>🤝 Startup Culture</h4>
+                    <p>Be part of a dynamic, innovative startup environment</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Guru Software Solutions</h3>
+                <p>Building smart software solutions for the digital future</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="services.html">Web Development</a></li>
+                    <li><a href="services.html">Mobile Apps</a></li>
+                    <li><a href="services.html">UI/UX Design</a></li>
+                    <li><a href="services.html">AI & Automation</a></li>
+                </ul>
+            </div>
+             <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                     <ul>
+                        <li><a href="https://www.linkedin.com/in/guru-software-solutions-1605093a9" target="_blank"><img src="linkedlogo.jpg" alt="LinkedIn" width="30"></a></li>
+                        <li><a href="https://www.instagram.com/guru_software_25?igsh=MXFncHgwcmZwNTNsag==" target="_blank"><img src="instalogo.png" alt="Instagram" width="30"></a></li>
+                        <li><a href="https://www.facebook.com/share/1C5tktuWzf/" target="_blank"><img src="facebooklogo.png" alt="Facebook" width="30"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Guru Software Solutions. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

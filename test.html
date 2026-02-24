@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>API Test</title>
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        div { margin: 10px 0; }
+        button { padding: 10px; cursor: pointer; }
+        pre { background: #f0f0f0; padding: 10px; overflow: auto; }
+    </style>
+</head>
+<body>
+    <h1>API Test</h1>
+    <div>
+        <button onclick="testStats()">Test /api/statistics</button>
+        <button onclick="testContacts()">Test /api/contact-submissions</button>
+        <button onclick="testApplications()">Test /api/job-applications</button>
+    </div>
+    <pre id="output"></pre>
+    
+    <script>
+        const output = document.getElementById('output');
+        const API_BASE = 'http://localhost:5000';
+        
+        async function testStats() {
+            try {
+                output.textContent = 'Loading statistics...';
+                const res = await fetch(`${API_BASE}/api/statistics`);
+                const data = await res.json();
+                output.textContent = JSON.stringify(data, null, 2);
+            } catch (e) {
+                output.textContent = 'Error: ' + e.message;
+            }
+        }
+        
+        async function testContacts() {
+            try {
+                output.textContent = 'Loading contacts...';
+                const res = await fetch(`${API_BASE}/api/contact-submissions`);
+                const data = await res.json();
+                output.textContent = JSON.stringify(data, null, 2);
+            } catch (e) {
+                output.textContent = 'Error: ' + e.message;
+            }
+        }
+        
+        async function testApplications() {
+            try {
+                output.textContent = 'Loading applications...';
+                const res = await fetch(`${API_BASE}/api/job-applications`);
+                const data = await res.json();
+                output.textContent = JSON.stringify(data, null, 2);
+            } catch (e) {
+                output.textContent = 'Error: ' + e.message;
+            }
+        }
+    </script>
+</body>
+</html>
